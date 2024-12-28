@@ -11,12 +11,14 @@ interface Props {
   onClose: () => void;
   pathname: string;
 }
+
 const Sidebar: React.FC<Props> = ({ isOpen, onClose, pathname }) => {
   const sidebarRef = useOutsideClick<HTMLDivElement>(onClose);
+
   return (
     <div
       ref={sidebarRef}
-      className={`fixed inset-y-0 right-0 z-50 min-w-72 max-w-96 bg-bodyColor border-l border-l-hoverColor/50 shadow-xl trasnform ${
+      className={`fixed inset-y-0 right-0 z-50 min-w-72 max-w-96 bg-bodyColor border-l border-l-hoverColor/50 shadow-xl transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out`}
     >
@@ -24,7 +26,7 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose, pathname }) => {
         <button
           onClick={onClose}
           className="hover:text-red-600 hoverEffect"
-          aria-level="close sidebar"
+          aria-label="Close sidebar"
         >
           <X />
         </button>
@@ -46,8 +48,8 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose, pathname }) => {
         <Link
           href={"/resume.pdf"}
           target="_blank"
-          rel="noopener noreferer "
-          className="text-sm bg-lightSkt/10 rounded-md border px-4 py-2 hover:bg-hoverColor hover:border-hoverColor border-hoverColor hover:text-black hoverEffect "
+          rel="noopener noreferer"
+          className="text-sm bg-lightSkt/10 rounded-md border px-4 py-2 hover:bg-hoverColor hover:border-hoverColor border-hoverColor hover:text-black hoverEffect"
           onClick={onClose}
         >
           Hire Me
