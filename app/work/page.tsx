@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import React, { useState } from "react";
+
 import bookstore from "@/images/bookstore.png";
 import simpleecommerce from "@/images/simple-ecommerce.png";
 import appointment from "@/images/appointment.png";
@@ -61,23 +61,10 @@ const projects = [
 ];
 
 const WorkPage = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handleSlideChange = (index: number) => {
-    setCurrentIndex(index);
-  };
   return (
     <div className="py-6 md:py-12">
       <PageLayout>
-        <Carousel
-          opts={{ align: "start", loop: true }}
-          className="w-full "
-          onSelect={() => {
-            const index = 0;
-            if (typeof index === "number") {
-              handleSlideChange(index);
-            }
-          }}
-        >
+        <Carousel opts={{ align: "start", loop: true }} className="w-full ">
           <CarouselContent>
             {projects?.map((project) => (
               <CarouselItem key={project.id}>
@@ -162,7 +149,7 @@ const WorkPage = () => {
                       </div>
                       {/* image */}
                       <div className="w-full h-full md:w-1/2 order-1 md:order-2">
-                        <div className="relative h-64 md:h-96 bg-gray-700 rounded-lg overflow-hidden">
+                        <div className="relative h-72 sm:h-96  bg-gray-700 rounded-lg overflow-hidden">
                           <Image
                             src={project?.image}
                             alt={project?.title}
