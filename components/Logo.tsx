@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 interface Prpos {
-  className?: "string";
-  title: "string";
-  subtitle: "string";
+  className?: string;
+  title: string;
+  subtitle: string;
 }
 const Logo = ({ className, title, subtitle }: Prpos) => {
   return (
