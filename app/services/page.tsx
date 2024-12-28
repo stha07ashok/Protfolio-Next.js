@@ -2,8 +2,6 @@ import PageLayout from "@/components/PageLayout";
 import Title from "@/components/Title";
 import { Separator } from "@/components/ui/separator";
 import { servicesData } from "@/constants";
-import { ArrowUp } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 
 const ServicesPage = () => {

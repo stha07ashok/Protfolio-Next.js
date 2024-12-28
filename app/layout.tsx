@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
 import PageTransition from "@/components/PageTransition";
-import { Toast } from "@/components/ui/toast";
 import { Toaster } from "@/components/ui/toaster";
 // import StairTransition from "@/components/StairTransition";
 
