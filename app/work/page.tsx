@@ -65,7 +65,7 @@ const projects = [
     category: "Frontend Development",
     description:
       "A sleek and responsive web application that allows users to explore and showcase a variety of cars. The platform features a dynamic search functionality, user-friendly design, and efficient database integration to manage car details.",
-    stack: ["Next.js", "Tailwind Css"],
+    stack: ["Next.js", "Tailwind Css", "Typescript"],
     image: carshowcase,
     liveUrl:
       "https://nextjs-car-showcase-git-main-ashok-shresthas-projects-d61f8c93.vercel.app/",
