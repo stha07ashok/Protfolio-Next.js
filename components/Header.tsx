@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           ))}
           <Link
-            href={"/resume.pdf"}
+            href="./resume.pdf"
             target="_blank"
             rel="noopener noreferer "
             className="text-sm bg-lightSkt/10 rounded-md border px-4 py-2 hover:bg-hoverColor hover:border-hoverColor border-hoverColor hover:text-black hoverEffect "
