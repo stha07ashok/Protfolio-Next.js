@@ -17,7 +17,7 @@ const infoData = [
 const ContactPage = () => {
   return (
     <PageLayout>
-      <Container className="py-6 md:py-12 flex flex-col gap-6 md:flex-row md:gap-12">
+      <Container className="py-6 md:py-12 flex flex-col gap-6 md:flex-row md:gap-12 w-screen">
         <div className="w-full md:w-1/2 ">
           <ContactForm />
         </div>

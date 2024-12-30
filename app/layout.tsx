@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import localFont from "next/font/local";
 import PageTransition from "@/components/PageTransition";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/Footer";
 // import StairTransition from "@/components/StairTransition";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         {/* <StairTransition /> */}
         <PageTransition>{children}</PageTransition>
+        <Footer />
         <Toaster />
       </body>
     </html>
