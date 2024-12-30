@@ -29,9 +29,15 @@ export default function Home() {
                 <HomeDescription />
               </div>
             </div>
-            <Button className="bg-transparent rounded-full border border-lightSky/50 text-lightSky hover:bg-hoverColor hover:text-black hoverEffect h-11 my-6">
-              Download CV <Download />
-            </Button>
+
+            <a
+              href="./resume.pdf" // Link to your CV PDF
+              download="resume.pdf" // This prompts the browser to download the file
+            >
+              <Button className="bg-transparent rounded-full border border-lightSky/50 text-lightSky hover:bg-hoverColor hover:text-black hoverEffect h-11 my-6">
+                Download CV <Download />
+              </Button>
+            </a>
             <SocialLinks />
             <Statistics />
           </div>
