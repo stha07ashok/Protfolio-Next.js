@@ -9,15 +9,22 @@ import Link from "next/link";
 import React from "react";
 
 const socialData = [
-  { title: "Facebook", icon: <Facebook />, href: "https://www.facebook.com" },
-  { title: "Github", icon: <Github />, href: "https://www.github.com" },
-  { title: "LinkedIn", icon: <Linkedin />, href: "https://www.linkedin.com" },
+  {
+    title: "Facebook",
+    icon: <Facebook />,
+    href: "https://www.facebook.com/ashokshrestha2003",
+  },
+  { title: "Github", icon: <Github />, href: "https://github.com/stha07ashok" },
+  {
+    title: "LinkedIn",
+    icon: <Linkedin />,
+    href: "https://www.linkedin.com/in/ashok-shrestha-a295b3235/",
+  },
   {
     title: "Instagram",
     icon: <Instagram />,
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/_stha07ashok_/",
   },
-  { title: "Twitter", icon: <Twitter />, href: "https://www.twitter.com" },
 ];
 
 const SocialLinks = () => {

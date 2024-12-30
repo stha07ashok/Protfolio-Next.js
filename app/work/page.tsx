@@ -11,6 +11,7 @@ import {
 import bookstore from "@/images/bookstore.png";
 import simpleecommerce from "@/images/simple-ecommerce.png";
 import appointment from "@/images/appointment.png";
+import carshowcase from "@/images/car.png";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Separator } from "@radix-ui/react-separator";
@@ -57,6 +58,18 @@ const projects = [
     image: simpleecommerce,
     liveUrl: "https://mern-simple-e-commerce-project.onrender.com/",
     githubUrl: "https://github.com/stha07ashok/MERN-simple-E-commerce-project",
+  },
+  {
+    id: "04",
+    title: "Car Showcase",
+    category: "Frontend Development",
+    description:
+      "A sleek and responsive web application that allows users to explore and showcase a variety of cars. The platform features a dynamic search functionality, user-friendly design, and efficient database integration to manage car details.",
+    stack: ["Next.js", "Tailwind Css"],
+    image: carshowcase,
+    liveUrl:
+      "https://nextjs-car-showcase-git-main-ashok-shresthas-projects-d61f8c93.vercel.app/",
+    githubUrl: "https://github.com/stha07ashok/Nextjs_Car_Showcase",
   },
 ];
 
