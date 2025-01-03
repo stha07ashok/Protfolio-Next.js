@@ -1,7 +1,7 @@
 "use client";
 import PageLayout from "@/components/PageLayout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Briefcase, Calendar, Code2, GraduationCap, User } from "lucide-react";
+import { Calendar, Code2, GraduationCap, User } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
