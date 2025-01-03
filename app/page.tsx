@@ -3,7 +3,7 @@ import HomeDescription from "@/components/HomeDescription";
 import PageLayout from "@/components/PageLayout";
 import Photo from "@/components/Photo";
 import SocialLinks from "@/components/SocialLinks";
-import Statistics from "@/components/Statistics";
+// import Statistics from "@/components/Statistics";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -39,7 +39,7 @@ export default function Home() {
               </Button>
             </a>
             <SocialLinks />
-            <Statistics />
+            {/* <Statistics /> */}
           </div>
 
           {/* Photo section */}

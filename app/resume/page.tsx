@@ -7,34 +7,34 @@ import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
 
 const tabMenu = [
-  { title: "Experience", value: "experience", icon: Briefcase },
+  // { title: "Experience", value: "experience", icon: Briefcase },
   { title: "Education", value: "education", icon: GraduationCap },
   { title: "Skills", value: "skills", icon: Code2 },
   { title: "About me", value: "about", icon: User },
 ];
 
 const tabContent = {
-  experience: {
-    title: "Professional Experience",
-    items: [
-      {
-        role: "Senior Frontend Developer",
-        company: "ABC Company",
-        period: "2023-Present",
-        description:
-          "Led the development of multiple React-based web applications, improving performance by 40%. Mentored junior developers and implemented best practices for code quality.",
-        highlights: ["React", "Next.js", "TypeScript", "Team Leadership"],
-      },
-      {
-        role: "Full Stack Developer",
-        company: "XYZ Company",
-        period: "2023-Present",
-        description:
-          "Developed and maintained full-stack applications using modern Javascript frameworks. Collaborated with cross-functional teams to deliver high-quality solutions.",
-        highlights: ["Node.js", "Next.js", "MongoDB", "AWS"],
-      },
-    ],
-  },
+  // experience: {
+  //   title: "Professional Experience",
+  //   items: [
+  //     {
+  //       role: "Senior Frontend Developer",
+  //       company: "ABC Company",
+  //       period: "2023-Present",
+  //       description:
+  //         "Led the development of multiple React-based web applications, improving performance by 40%. Mentored junior developers and implemented best practices for code quality.",
+  //       highlights: ["React", "Next.js", "TypeScript", "Team Leadership"],
+  //     },
+  //     {
+  //       role: "Full Stack Developer",
+  //       company: "XYZ Company",
+  //       period: "2023-Present",
+  //       description:
+  //         "Developed and maintained full-stack applications using modern Javascript frameworks. Collaborated with cross-functional teams to deliver high-quality solutions.",
+  //       highlights: ["Node.js", "Next.js", "MongoDB", "AWS"],
+  //     },
+  //   ],
+  // },
   education: {
     title: "Educational Background",
     items: [
@@ -93,12 +93,12 @@ const tabContent = {
         description: "developing web server and creating api for the frontend",
         skills: ["Node.js", "Express", "MongoDB"],
       },
-      {
-        name: "Tools and Others",
-        description:
-          "Using tools and technologies to improve the development process and deployment of applicatino to the cloud server.  ",
-        skills: ["Git", "AWS", "Docker"],
-      },
+      // {
+      //   name: "Tools and Others",
+      //   description:
+      //     "Using tools and technologies to improve the development process and deployment of applicatino to the cloud server.  ",
+      //   skills: ["Git", "AWS", "Docker"],
+      // },
     ],
   },
   about: {
@@ -119,7 +119,7 @@ const ResumePage = () => {
     <div className="flex flex-col justify-center py-10">
       <PageLayout>
         <Tabs
-          defaultValue="experience"
+          defaultValue="education"
           className="w-full flex flex-col md:flex-row gap-6 md:gap-10"
         >
           <TabsList className="flex md:flex-col md:gap-2 h-full bg-transparent md:w-64 gap-5 ">
@@ -137,7 +137,7 @@ const ResumePage = () => {
             ))}
           </TabsList>
           <div className="flex-1 min-h-[400px]">
-            <TabsContent value="experience">
+            {/* <TabsContent value="experience">
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -157,14 +157,14 @@ const ResumePage = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div>
                         <h3 className="text-lf font-semibold">{item?.role}</h3>
-                        {/* <p className="text-muted-foregroundß">
+                        <p className="text-muted-foregroundß">
                           {item?.company}
-                        </p> */}
+                        </p>
                       </div>
-                      {/* <div className="flex items-center text-muted-foreground">
+                      <div className="flex items-center text-muted-foreground">
                         <Calendar className="" />
                         {item?.period}
-                      </div> */}
+                      </div>
                     </div>
                     <p className="mb-4 text-white">{item?.description}</p>
                     <div className="flex flex-wrap gap-2">
@@ -177,7 +177,7 @@ const ResumePage = () => {
                   </motion.div>
                 ))}
               </div>
-            </TabsContent>
+            </TabsContent> */}
             <TabsContent value="education">
               <motion.h2
                 initial={{ opacity: 0 }}

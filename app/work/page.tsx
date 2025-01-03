@@ -91,6 +91,9 @@ const WorkPage = () => {
                             {project?.id}
                           </h2>
                           <h3 className="text-xl md:text-3xl font-bold leading-none text-white group-hover:text-lightSky hoverEffect">
+                            {project?.title}
+                          </h3>
+                          <h3 className="text-xl md:text-xl font-bold leading-none text-white group-hover:text-lightSky hoverEffect">
                             {project?.category}
                           </h3>
                           <p className="text-white/60 text-sm md:text-base leading-6 md:leading-normal">
